@@ -30,8 +30,38 @@
 			<th>상태</th>
 			<td>
 				<select name="state">
-					<option selected="selected">${spms.state }</option>
-					<option></option>
+					<c:choose>
+						<c:when test="${spms.state == '준비'} ">
+							<option selected="selected">${spms.state }</option>
+							<option>진행중</option>
+							<option>종료</option>
+							<option>보류</option>
+						</c:when>
+						<c:when test="${spms.state == '진행중'} ">
+							<option>준비</option>
+							<option selected="selected">${spms.state }</option>
+							<option>종료</option>
+							<option>보류</option>
+						</c:when>
+						<c:when test="${spms.state == '종료'} ">
+							<option>준비</option>
+							<option>진행중</option>
+							<option selected="selected">${spms.state }</option>
+							<option>보류</option>
+						</c:when>
+						<c:when test="${spms.state == '보류'} ">
+							<option>준비</option>
+							<option>진행중</option>
+							<option>종료</option>
+							<option selected="selected">${spms.state }</option>
+						</c:when>
+						<c:otherwise>
+							<option>준비</option>
+							<option>진행중</option>
+							<option>종료</option>
+							<option>보류</option>
+						</c:otherwise>
+					</c:choose>
 				</select>
 			</td>
 		</tr>

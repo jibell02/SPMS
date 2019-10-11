@@ -38,7 +38,7 @@ public class InsertHandler implements CommandHandler {
 			
 			try {
 				conn = ConnectionProvider.getConnection();
-				conn.setAutoCommit(false);
+				conn.setAutoCommit(false); // 테이블 두개가 아니라서 굳이 할 필요는 없었음..
 				SpmsDAO dao = SpmsDAO.getInstance();
 				
 				HttpSession session = request.getSession();
