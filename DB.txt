@@ -1,0 +1,18 @@
+use spms;
+
+create table spms(
+	no int(11) not null auto_increment,
+	name varchar(50) not null,
+	content text,
+	startDate date not null,
+	endDate date not null,
+	state varchar(11) not null,
+	primary key(no)
+);
+
+
+desc spms;
+
+select * from spms;
+
+insert into spms values(null, "관리자 프로젝트", "관리자들의 하는 일을 프로젝트화 하는 것", "2016-08-24", "2016-08-27", "준비");
