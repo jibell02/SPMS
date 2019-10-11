@@ -1,4 +1,4 @@
-use spms;
+ï»¿use spms;
 
 create table spms(
 	no int(11) not null auto_increment,
@@ -15,4 +15,4 @@ desc spms;
 
 select * from spms;
 
-insert into spms values(null, "°ü¸®ÀÚ ÇÁ·ÎÁ§Æ®", "°ü¸®ÀÚµéÀÇ ÇÏ´Â ÀÏÀ» ÇÁ·ÎÁ§Æ®È­ ÇÏ´Â °Í", "2016-08-24", "2016-08-27", "ÁØºñ");
+insert into spms values(null, "ê´€ë¦¬ì í”„ë¡œì íŠ¸", "ê´€ë¦¬ìë“¤ì˜ í•˜ëŠ” ì¼ì„ í”„ë¡œì íŠ¸í™” í•˜ëŠ” ê²ƒ", "2016-08-24", "2016-08-27", "ì¤€ë¹„");
